@@ -1,4 +1,4 @@
-package utils
+package main
 
 import (
 	"crypto/rsa"
@@ -8,7 +8,7 @@ import (
 	"github.com/pkg/errors"
 )
 //读取公钥文件转换为公钥
-func readRSAPublicKey(filename string) (*rsa.PublicKey, error) {
+func ReadRSAPublicKey(filename string) (*rsa.PublicKey, error) {
 	//读取公钥文件
 	info, err := ioutil.ReadFile(filename)
 	if err != nil {
@@ -30,7 +30,7 @@ func readRSAPublicKey(filename string) (*rsa.PublicKey, error) {
 	return pubKey, nil
 }
 //读取私钥文件转换为私钥
-func readRSAPriKey(filename string) (*rsa.PrivateKey, error) {
+func ReadRSAPriKey(filename string) (*rsa.PrivateKey, error) {
 	//读取私钥文件
 	info, err := ioutil.ReadFile(filename)
 	if err != nil {
