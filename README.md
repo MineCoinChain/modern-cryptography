@@ -1,5 +1,5 @@
 # modern-cryptography
-golang下密码学包的使用
+golang下常用的密码学包的使用
 ```
 ├── 01AES+CTR对称加密的实现.go
 ├── 02DES+CBC对称加密的实现.go
